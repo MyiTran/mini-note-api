@@ -1,0 +1,18 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Mini Note API V1",
+    "version": "v1",
+    "description": "Tài liệu hệ thống API quản lý ghi chú của Trà My"
+  },
+  "paths": {
+    "/notes": {
+      "get": {
+        "summary": "Lấy danh sách tất cả ghi chú (Có hỗ trợ Filter & Pagination)",
+        "responses": {
+          "200": { "description": "Thành công" }
+        }
+      }
+    }
+  }
+}
