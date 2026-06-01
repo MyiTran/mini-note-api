@@ -1,24 +1,28 @@
-# README
+# 📝 Mini Note API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A lightweight, RESTful API-only application built with **Ruby 3.3.0** and **Rails 7.2** to demonstrate core backend engineering and data processing concepts.
 
-Things you may want to cover:
+## 🚀 Key Features
+- 🔐 **JWT Authentication:** Secure, stateless endpoint protection via token headers.
+- 🗜 **Serializers:** Optimized JSON payloads using `active_model_serializers`.
+- 🔍 **Filtering & Pagination:** Server-side search (`ILIKE`) and custom `limit`/`offset` handling.
+- 🧪 **Automated Testing:** Request specs built with **RSpec** to validate API responses.
+- 📖 **API Docs:** Interactive API playground using **Swagger UI** (`rswag`).
 
-* Ruby version
+## 🛠 Tech Stack
+- **Framework:** Ruby on Rails 7.2 (API mode)
+- **Database:** PostgreSQL
+- **Testing & Docs:** RSpec, Rswag
 
-* System dependencies
+## 💻 Quick Start
+```bash
+# Setup database
+rails db:create
+rails db:migrate
 
-* Configuration
+# Run tests
+bundle exec rspec
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Start server
+rails s
+# Access Swagger UI at: http://localhost:3000/api-docs
